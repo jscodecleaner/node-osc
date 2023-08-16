@@ -1,7 +1,7 @@
 {
   "name": "node-osc",
   "description": "pyOSC inspired library for sending and receiving OSC messages",
-  "version": "6.0.7",
+  "version": "8.1.0",
   "exports": {
     "require": "./dist/lib/index.js",
     "default": "./lib/index.mjs"
@@ -11,9 +11,9 @@
     "email": "myles.borins@gmail.com"
   },
   "engines": {
-    "node": "^12.22 || ^14.13 || >=16"
+    "node": "^14.18 || ^16.13 || >=18"
   },
-  "license": "LGPL-2.1",
+  "license": "LGPL-3.0-or-later",
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "npm run clean && rollup --config rollup.config.mjs",
@@ -34,16 +34,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/MylesBorins/node-osc.git"
+    "url": "git+https://github.com/MylesBorins/node-osc.git"
   },
   "dependencies": {
     "osc-min": "^1.1.1"
   },
   "devDependencies": {
-    "c8": "^7.3.0",
-    "eslint": "^7.6.0",
-    "get-port": "^5.1.1",
-    "rollup": "^2.23.0",
-    "tap": "^15.0.4"
+    "c8": "^8.0.1",
+    "eslint": "^8.36.0",
+    "get-port": "^6.1.2",
+    "rollup": "^3.20.1",
+    "tap": "^16.3.0"
   }
 }

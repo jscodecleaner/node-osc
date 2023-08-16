@@ -13,10 +13,6 @@ on:
         description: 'Semver type of new version (major / minor / patch)'
         # Input has to be provided for the workflow to run
         required: true
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "greet"
   bump-version:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -30,13 +26,6 @@ jobs:
     - name: Check out source
       uses: actions/checkout@v2
 
-    - name: Setup Node.js 14
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-
-    - name: Install npm packages
-      run: npm install
 
     - name: Setup Git
       run: |
